@@ -1,0 +1,21 @@
+/* SLAHeader.css */
+
+.sla-header {
+  margin-bottom: 17px;
+}
+
+.sla-header__title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 3px 0;
+}
+
+.sla-header__subtitle {
+  font-size: 10px;
+  color: #64748B;
+  font-weight: 400;
+  margin: 0;
+}

@@ -1,0 +1,221 @@
+.canned-responses-page {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 24px 28px;
+}
+
+.canned-responses-header {
+  margin-bottom: 24px;
+}
+
+.canned-responses-header__title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+.canned-responses-header__subtitle {
+  font-size: 12px;
+  color: #64748B;
+  font-weight: 400;
+  margin: 0;
+}
+
+.canned-responses-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.canned-responses-layout__left {
+  /* Grid handles width */
+}
+
+.canned-responses-layout__right {
+  /* Grid handles width */
+}
+
+/* Card Styling (Shared) */
+.cr-card {
+  background: #ffffff;
+  border: 1px solid #dce3ec;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(15,23,42,.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cr-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15,23,42,.08);
+}
+
+/* Create Template Card */
+.create-template-card {
+  padding: 20px;
+}
+
+.create-template-card__heading {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94A3B8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* Template Form */
+.template-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.template-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.template-form__label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.template-form__input,
+.template-form__textarea {
+  width: 100%;
+  border: 1px solid #d9dee7;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #0F172A;
+  padding: 12px;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.template-form__input:focus,
+.template-form__textarea:focus {
+  border-color: #109F8D;
+}
+
+.template-form__input::placeholder,
+.template-form__textarea::placeholder {
+  color: #94A3B8;
+  font-size: 13px;
+}
+
+.template-form__input {
+  height: 40px;
+}
+
+.template-form__textarea {
+  height: 120px;
+  resize: none;
+}
+
+.template-form__submit {
+  width: 100%;
+  height: 42px;
+  background: #109F8D;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  margin-top: 4px;
+}
+
+.template-form__submit:hover {
+  background: #0D8777;
+}
+
+/* Template List */
+.template-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Template Card */
+.template-card {
+  padding: 20px;
+}
+
+.template-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.template-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 2px 0;
+}
+
+.template-card__date {
+  font-size: 11px;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.template-card__body-box {
+  background: #f8fafc; /* light gray container */
+  border: 1px solid #e4e8ef;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.template-card__body-text {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #DC2626;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.delete-button:hover {
+  background: #FEE2E2;
+}
+
+.delete-button svg {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 1024px) {
+  .canned-responses-layout {
+    grid-template-columns: 1fr;
+  }
+}

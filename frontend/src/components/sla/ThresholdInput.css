@@ -1,0 +1,69 @@
+/* ThresholdInput.css */
+
+.threshold-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.threshold-input__label {
+  font-size: 8px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.threshold-input__control {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  width: fit-content;
+  height: 32px;
+}
+
+.threshold-input__btn {
+  width: 26px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s;
+  user-select: none;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.threshold-input__btn:hover {
+  background: #F1F5F9;
+  color: #0F172A;
+}
+
+.threshold-input__btn:disabled {
+  color: #CBD5E1;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+.threshold-input__value {
+  min-width: 41px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0F172A;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 2px;
+  border-left: 1.5px solid #E2E8F0;
+  border-right: 1.5px solid #E2E8F0;
+}

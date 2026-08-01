@@ -1,0 +1,255 @@
+/* src/pages/TeamDirectory/TeamDirectoryPage.css */
+.team-directory-page {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 27px;
+  background-color: #F6F8FB;
+  min-height: calc(100vh - 72px);
+}
+
+/* Header */
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.team-header__title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.team-header__subtitle {
+  font-size: 10px;
+  color: #64748B;
+  font-weight: 400;
+  margin: 0;
+}
+
+.team-header__btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #149988;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  height: 37px;
+  padding: 0 19px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(20, 153, 136, 0.2);
+  transition: background 0.15s ease;
+}
+
+.team-header__btn:hover {
+  background: #117C6F;
+}
+
+/* Main Table Card */
+.team-table-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.team-table-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* Thin custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 #EEF2F7;
+}
+
+.team-table-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.team-table-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.team-table-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+.team-table {
+  width: max-content;
+  min-width: 1265px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid layout for columns */
+.team-table__header,
+.team-row {
+  display: grid;
+  grid-template-columns: 162px 280px 110px 170px 119px 145px 280px;
+  align-items: center;
+  gap: 0;
+}
+
+/* Table Header */
+.team-table__header {
+  height: 51px;
+  background: #ffffff;
+  padding: 0 20px 0 26px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.th-col {
+  font-size: 11px;
+  font-weight: 700;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Rows */
+.team-row {
+  height: 63px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  background-color: var(--row-bg);
+  border-left: 5px solid var(--row-border);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+  transition: background-color 0.18s ease;
+  cursor: pointer;
+}
+
+.team-row:hover {
+  background-color: var(--row-hover);
+}
+
+.team-row:last-child {
+  border-bottom: none;
+}
+
+.td-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.td-email {
+  font-size: 12px;
+  color: #6B7280;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: -0.01em;
+}
+
+.team-role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 27px;
+  padding: 0 12px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.dept-link {
+  color: #3B82F6;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dept-link:hover {
+  text-decoration: underline;
+}
+
+.dept-none {
+  color: #9CA3AF;
+  font-size: 12px;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #16A34A;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16A34A;
+}
+
+.td-active {
+  font-size: 11px;
+  color: #6B7280;
+  line-height: 1.4;
+  white-space: pre-line; /* keeps \n formatting */
+}
+
+/* Actions */
+.td-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-edit {
+  color: #2563EB;
+  border: 1px solid #BFDBFE;
+}
+
+.btn-edit:hover {
+  background: #EFF6FF;
+}
+
+.btn-block {
+  color: #EF4444;
+  border: 1px solid #FECACA;
+}
+
+.btn-block:hover {
+  background: #FEF2F2;
+}
+
+.btn-delete {
+  color: #EF4444;
+  border: 1px solid #FECACA;
+}
+
+.btn-delete:hover {
+  background: #FEF2F2;
+}
