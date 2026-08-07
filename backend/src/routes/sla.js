@@ -1,7 +1,7 @@
 // manages the SLA policies - anyone can view them but only admins can change them
 import express from 'express';
 import supabaseAdmin, { supabaseDB } from '../config/supabase.js';
-import { requireAuth } from '../middleware/auth.js';
+import { requireAuth, requireAdmin } from '../middleware/auth.js';
 
 const router = express.Router();
 
